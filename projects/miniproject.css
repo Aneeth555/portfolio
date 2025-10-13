@@ -2,7 +2,7 @@
 
 /* Reset */
 html {
-  font-size: 22px;   /* default is 16px — this makes everything ~12.5% larger */
+  font-size: 20px;   /* default is 16px — this makes everything ~12.5% larger */
 }
 * {
   margin: 0;
@@ -231,3 +231,4 @@ footer {
   padding: 2rem 0;
   color: #94a3b8;
 }
+
