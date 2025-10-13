@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Aneeth</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+        <span class="name">Aneeth</span>
+        <span class="dot">.</span>
+      </div>
+      <a href="index.html#about" class="back-button">
+        <i data-feather="arrow-left"></i>
+         ← Back </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div> <!-- background image overlay -->
+  </div>
+</section>
+  <!-- Scroll Down Indicator -->
+     <div class="scroll-down" id="scroll-down">
+  <div class="mouse">
+    <div class="wheel"></div>
+  </div>
+   <div style="text-align:center; margin-top:50px; font-size:20px;">
+  Scroll Down<br>
+  <span style="font-size:30px;">↓</span>
+</div>
+</div>
+
+
+  <!-- Education Section -->
+  <section id="education" class="education container">
+    <div class="card">
+      <div class="card-header">
+        <div class="icon">🎓</div>
+        <div class="card-info">
+          <h2>Bachelor of Technology in Computer Science and Engineering</h2>
+          <p><strong>Institution:</strong> Mar Athanasius College Of Engineering , Kothamangalam</p>
+          <p><strong>University:</strong> APJ Abdul Kalam Technological University</p>
+          <p><strong> Year of Graduation:</strong> 2025</p>
+          <p><strong>CGPA:</strong> 7.02 / 10</p>
+        </div>
+      </div>
+      <p class="card-desc">
+         I graduated with a strong foundation in artificial intelligence and deep learning, where my academic and project experiences strengthened my analytical thinking and problem-solving abilities. I’m eager to apply this knowledge to create impactful, real-world AI solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications container">
+    <h2>Certifications & Achievements</h2>
+    <div class="cert-grid">
+      <div class="cert-card">SQL (Intermediate) Certification by HackerRank
+        
+        <a href="assets/sql_intermediate certificate.pdf" class="btn">view Certifiacate →</a>
+      </div>
+      <div class="cert-card">Swayam Online Course Certification in Information Security and Cyber Forensics
+
+        <a href="assets/Swayamnptel.pdf" class="btn">view Certifiacate  →</a>
+      </div>
+      <div class="cert-card"> Certification of internship in Flutter from Spectrum Softech Solutions, Kochi
+
+        <a href="assets/spectrum intership certificate.pdf" class="btn">view Certifiacate  →</a>
+      </div>
+      <div class="cert-card">  Best Software Project Award |.hack()2023 - a 36+ hours hackathon organized by IEEE MACE 
+
+        <a href="assets/.hack.png" class="btn">view Certifiacate  →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section class="interests container">
+    <div class="card">
+      <div class="card-header">
+        <div class="icon">🎯</div>
+        <h2>Interests & Goals</h2>
+      </div>
+      <p class="card-desc">
+         I’m passionate about designing and developing intelligent software systems that combine innovation with real-world impact. My interests span AI and software engineering—building solutions that make data-driven decisions while ensuring ethical and human-centered outcomes. I’m also intrigued by smart, real-time systems that bridge software intelligence with practical applications.
+      </p>
+      <div class="btn-group">
+      <a href="index.html#projects">
+      <button class="btn-primary">View My Projects</button>
+      </a>
+      <a href="index.html#contact">
+      <button class="btn-outline">Get In Touch</button>
+      </a>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aneeth P Biju </p>
+  </footer>
+
+
+
+  <!-- Scroll Down Script -->
+   <!-- Scroll Down Script -->
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const scrollDown = document.getElementById('scroll-down');
+    scrollDown.style.opacity = '0';
+    scrollDown.style.transition = 'opacity 1.5s ease';
+    setTimeout(() => {
+      scrollDown.style.opacity = '1';
+    }, 1000); // fade in after 1s
+
+    scrollDown.addEventListener('click', () => {
+      document.querySelector('#education').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+</body>
+</html>

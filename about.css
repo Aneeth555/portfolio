@@ -1,0 +1,339 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body */
+body {
+  background: radial-gradient(circle at top left,#020617,#0f172a);
+  color: #f3f6f8;
+  line-height: 1.3; /* more line spacing */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(15,23,42,0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(56,189,248,0.1);
+  padding: 1rem 0; /* more vertical padding */
+  z-index: 200;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* more spacing between logo and nav links */
+}
+
+.logo .name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.logo .dot {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #f1f5f9;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #38bdf8;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #38bdf8;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* full screen height */
+  background: url("assets/about.jpg") center/cover no-repeat; /* background image */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* align content to the left */
+  color: white;
+  overflow: hidden;
+}
+
+/* Optional dark overlay for readability */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark transparent layer */
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
+  max-width: 700px;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(56,189,248,0.2);
+  color: #38bdf8;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(56,189,248,0.5);
+}
+
+/* Heading and text */
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #38bdf8, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .hero-content {
+    padding: 6rem;
+  }
+}
+
+
+
+/* Sections */
+section {
+  padding: 3rem 0; /* extra spacing between sections */
+}
+
+/* Card */
+.card, .cert-card, .project-card {
+  background: rgba(30,41,59,0.6);
+  border: 2px solid rgba(56,189,248,0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 3rem; /* more spacing between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .cert-card:hover, .project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(56,189,248,0.5);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* more spacing */
+  margin-bottom: 1.5rem;
+}
+
+.card-header .icon {
+  font-size: 2.2rem;
+  background: rgba(56,189,248,0.2);
+  padding: 0.6rem;
+  border-radius: 12px;
+}
+
+.card-info h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 0.8rem;
+}
+
+.card-info p, .card-desc {
+  color: #f6f8fa;
+  margin-bottom: 1rem;
+}
+
+/* Certifications */
+.certifications h2 {
+  font-size: 2.2rem;
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+}
+
+.cert-grid, .project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* more space between grid items */
+}
+
+@media(min-width: 768px) {
+  .cert-grid, .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 1024px) {
+  .cert-grid, .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #38bdf8, #3b82f6);
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.5rem; /* more space between buttons */
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(56,189,248,0.1);
+  text-align: center;
+  padding: 3rem 0;
+  color: #94a3b8;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2.5rem;
+  }
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+
+
+.btn{
+  display:inline-block;padding:0.7rem 1.6rem;margin-right:.8rem;
+  border-radius:10px;text-decoration:none;font-weight:500;transition:.3s;
+}
+.btn{border:2px solid #38bdf8;color:#38bdf8;}
+.btn:hover{background:#38bdf8;color:#0f172a;}
+
+.btn-primary,.btn-outline{
+  display:inline-block;padding:0.7rem 1.6rem;margin-right:.8rem;
+  border-radius:10px;text-decoration:none;font-weight:500;transition:.3s;
+}
+.btn-primary{background:#38bdf8;color:#0f172a;}
+.btn-primary:hover{background:#0ea5e9;}
+.btn-outline{border:2px solid #38bdf8;color:#38bdf8;}
+.btn-outline:hover{background:#38bdf8;color:#0f172a;}
+
+
+/* Scroll Down Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, 10px);
+  }
+  60% {
+    transform: translate(-50%, 5px);
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: #38bdf8;
+  font-size: 1rem;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  
+}
+
+.scroll-text {
+  letter-spacing: 1px;
+  font-weight: 500;
+  opacity: 0.8;
+}

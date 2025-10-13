@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Treatment Optimization</title>
+  <link rel="stylesheet" href="finalproject.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.264.0/dist/lucide.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+        <span class="name">Aneeth</span>
+        <span class="dot">.</span>
+      </div>
+        <a href="../index.html#projects" class="back-button">
+        <i data-feather="arrow-left"></i>
+        Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Personalized Treatment Optimization & Side Effect Prediction</h1>
+        <div class="badges">
+          <span class="badge"><i data-feather="brain"></i> AI & Machine Learning</span>
+          <span class="badge"><i data-feather="code"></i> Healthcare</span>
+          <span class="badge"><i data-feather="layers"></i> BERT & Ensemble Learning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="card overview">
+      <h2>Overview</h2>
+      <p>
+        A clinical AI system that analyzes unstructured clinical notes using BERT and predicts
+        the most suitable treatment, drugs, and potential side effects for lung cancer patients.
+        The system uses ensemble learning to improve prediction accuracy and provides an
+        interpretable, real-time interface via a Flask web app.
+      </p>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="card system-architecture">
+      <h2>System Architecture</h2>
+      <div class="architecture-placeholder">
+        <img src="../assets/finalproject/Picture1.png" alt="Treatment Optimization Project">
+         <p>
+          End-to-end workflow: Clinical notes → Preprocessing → BERT → Ensemble models → Majority voting → Predictions (Treatment, Drug, Side Effects)
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="card tech-stack">
+      <h2><i data-feather="database"></i> Tech Stack</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python</li>
+        <li><strong>NLP:</strong> BERT (HuggingFace Transformers)</li>
+        <li><strong>ML Models:</strong> Random Forest, SVM, Gradient Boosting, MultiOutputClassifier</li>
+        <li><strong>Libraries:</strong> Pandas, NumPy, NLTK, Scikit-Learn</li>
+        <li><strong>Deployment:</strong> Flask, Joblib, HTML/CSS/JS</li>
+        <li><strong>Optimization:</strong> RandomizedSearchCV, StandardScaler</li>
+      </ul>
+    </section>
+
+    <!-- Contributions -->
+    <section class="card contributions">
+      <h2>My Contributions</h2>
+      <ul>
+        <li><i data-feather="check-circle"></i> Designed and implemented full NLP + ML pipeline</li>
+        <li><i data-feather="check-circle"></i> Fine-tuned BERT embeddings for unstructured medical data</li>
+        <li><i data-feather="check-circle"></i> Developed ensemble learning approach to improve accuracy</li>
+        <li><i data-feather="check-circle"></i> Implemented multi-label classification for side effect prediction</li>
+        <li><i data-feather="check-circle"></i> Built and deployed Flask API with frontend UI</li>
+      </ul>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="card conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        This system assists clinicians by providing personalized treatment options and
+        predicting possible side effects based on real patient data. It reduces trial-and-error
+        decision-making and enables data-driven clinical support.
+      </p>
+    </section>
+      <a href="https://github.com/Aneeth555/Personalized-Treatment-Optimization-and-Side-Effect-Prediction-for-Lung-Cancer" target="_blank" class="btn-gradient">
+        <i data-feather="github"></i> View Source Code <i data-feather="external-link"></i>
+      </a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aneeth P Biju</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>
