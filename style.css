@@ -237,3 +237,99 @@ border-top:1px solid rgba(56,189,248,0.1);color:#94a3b8;font-size:.9rem;}
   box-shadow: 0 5px 15px rgba(56,189,248,0.5);
 }
 
+
+/* ✅ Added and Improved Responsive Adjustments */
+
+/* Responsive for tablets (below 900px) */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 5%; /* 🔹 Reduced padding for small screens */
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+    max-width: 300px; /* 🔹 Prevent oversized images */
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap; /* 🔹 Allow links to wrap instead of overflowing */
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem; /* 🔹 Scaled down heading */
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 🔹 More compact grid */
+  }
+}
+
+/* ✅ Added smaller screen (mobile) optimization */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* 🔹 Slightly smaller text for narrow view */
+  }
+
+  section {
+    padding: 3rem 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+  }
+
+  .btn-primary, .btn-outline {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .glow-circle {
+    max-width: 240px;
+  }
+
+  .skills-badges span {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+
+
