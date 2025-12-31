@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fruit Freshness Classifier</title>
+  <link rel="stylesheet" href="hobbyproject1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.264.0/dist/lucide.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+        <span class="name">Aneeth</span>
+        <span class="dot">.</span>
+      </div>
+        <a href="../index.html#projects" class="back-button">
+        <i data-feather="arrow-left"></i>
+        Back to Projects
+      </a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Fruit Freshness Classifier</h1>
+        <div class="badges">
+          <span class="badge"><i data-feather="brain"></i> AI & Machine Learning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="card overview">
+      <h2>Overview</h2>
+      <p>
+        The Fruit Freshness Classifier is a deep learning–based computer vision project designed to classify fruit images into three categories: Fresh, Okay, and Avoid. The goal of the project is to automate fruit quality assessment using image-based analysis, reducing manual inspection and improving consistency.
+        The system is built using a ResNet50 convolutional neural network with transfer learning, trained on labeled fruit images. After training, the model is deployed using FastAPI, allowing users to upload an image through an API endpoint and receive real-time predictions.
+        The project covers the complete machine learning lifecycle — data preprocessing, model training, evaluation, and deployment — and demonstrates practical skills in deep learning, computer vision, and API-based model serving.
+      </p>
+    </section>
+
+<!-- Tech Stack -->
+
+<section class="card tech-stack">
+  <h2><i data-feather="database"></i> Tech Stack</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python</li>
+    <li><strong>ML Model:</strong> ResNet50 (Transfer Learning)</li>
+    <li><strong>Deep Learning Framework:</strong> PyTorch, Torchvision</li>
+    <li><strong>Image Processing:</strong> Pillow (PIL), OpenCV</li>
+    <li><strong>Data Handling:</strong> NumPy</li>
+    <li><strong>Backend / API:</strong> FastAPI</li>
+    <li><strong>Server:</strong> Uvicorn</li>
+    <li><strong>Deployment:</strong> Local Deployment (API-based)</li>
+  </ul>
+</section>
+
+
+    <!-- Contributions -->
+   <!-- Contributions -->
+<section class="card contributions">
+  <h2>My Contributions</h2>
+  <ul>
+    <li><i data-feather="check-circle"></i> Designed and implemented an end-to-end image classification pipeline for fruit freshness detection</li>
+    <li><i data-feather="check-circle"></i> Applied transfer learning using a pre-trained ResNet50 model for binary classification (Fresh vs Rotten)</li>
+    <li><i data-feather="check-circle"></i> Built custom data preprocessing and augmentation workflows for image datasets</li>
+    <li><i data-feather="check-circle"></i> Trained, validated, and evaluated the deep learning model using PyTorch</li>
+    <li><i data-feather="check-circle"></i> Developed a FastAPI-based backend to upload images and return real-time predictions</li>
+  </ul>
+</section>
+
+
+    <!-- Conclusion -->
+<section class="card conclusion">
+  <h2>Conclusion</h2>
+  <p>
+    This project demonstrates the practical application of deep learning in food quality assessment.
+    By accurately classifying fruits as fresh or rotten using image-based analysis, the system helps
+    reduce food waste and supports smarter decision-making in retail and supply chain environments.
+    The solution is scalable, efficient, and suitable for real-world deployment through an API-based interface.
+  </p>
+</section>
+
+      <a href="https://github.com/Aneeth555/Fruit-Freshness-Classifier" target="_blank" class="btn-gradient">
+        <i data-feather="github"></i> View Source Code <i data-feather="external-link"></i>
+      </a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aneeth P Biju</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>
